@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedNet</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #252525;
+            padding-bottom: 500px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(216, 27, 27);
+            padding-left: 30px;
+            padding-right: 30px;
+            height: 75px;
+        }
+
+        .hamburger-btn {
+            font-size: 25px;
+            border: 0;
+            display: inline;
+            cursor: pointer;
+            height: 35px;
+            width: 35px;
+            background-color: rgb(216, 27, 27);
+            color: white;
+            border-radius: 5px;
+
+            
+        }
+        .hamburger-btn:hover{
+            background-color: white;
+            color: rgb(216, 27, 27);
+            transition: 0.2s;
+        }
+
+        nav {
+            display: none;
+            background-color: rgb(216, 27, 27);
+            overflow: hidden;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .navigacija{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .sadrzaj{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .prviDeo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px;
+        }
+        .slika1{
+            display: flex;
+
+        }
+        .tekst1{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+
+
+        }
+        p{
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        .drugiDeo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px;
+        }
+        .slika2{
+            display: flex;
+
+        }
+        .tekst2{
+            display: flex;
+            flex-direction: column;
+        }
+        .treciDeo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px;
+        }
+        .slika3{
+            display: flex;
+
+        }
+        .iptvSlika{
+            width: 700px;
+        }
+        .tekst3{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: right;
+            align-items: center;
+            position: static;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: white;
+
+        }
+        .futerSlika{
+            background-color: white;
+        }
+        .futerTekst1{
+            color: white;
+        }
+        .naslov{
+            background-color: black;
+        }
+        .kontakt{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: red;
+        }
+        .adresaInfo{
+            color: white;
+            background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="speednet1.png" alt="speedNetSlika">
+        </div>
+
+        <div class="sredina">
+
+        </div>
+        
+        <div class="dugme">
+            <button class=" hamburger-btn" onclick="toggleNav()">
+                ☰
+            </button>
+        </div>
+    </header>
+
+
+    <nav id="dropdownNav">
+        <a href="index.html">POCETNA</a>
+        <a href="o_nama.html">O NAMA</a>
+        <a href="#services">USLUGE</a>
+        <a href="#contact">KONTAKT</a>
+    </nav>
+
+    <main class="sadrzaj">
+        <div class="prviDeo">
+            <div class="slika1">
+                <img src="wireless.png" alt="wireless">
+            </div>
+            <div class="tekst1">
+                <h1>WIRELESS NET</h1>
+                <p>
+                    Zelite brz internet bilo gde. Onda ste na pravom mestu. <br> 
+                    Uvodimo vam bezicni internet brzine do 50Mb/s vec od <br>
+                    1500 dinara mesecno.
+                </p>
+            </div>
+        </div>
+
+        <div class="drugiDeo">
+            <div class="tekst2">
+                <h1>OPTIC NET</h1>
+                <p>
+                    Internet svetlosne brzine u vasem domu. <br> Uvodimo vam 
+                    opticki internet brzine 150/50Mb/s vec od 1500 dinara mesecno.
+                </p>
+            </div>
+            <div class="slika2">
+                <img src="optica.png" alt="optica">
+            </div>
+        </div>
+    
+        <div class="treciDeo">
+            <div class="slika3">
+                <img class="iptvSlika" src="iptv.jpg" alt="">
+            </div>
+
+            <div class="tekst3">
+                <h1>IPTV</h1>
+                <P>
+                    Volite filmove, ili mozda utakmice. Uz nas IPTV i VideoKlub lako pratite <br>
+                    sve arena sport i sport klub kanale kao i sve filmske kanale uz mogucnost <br>
+                    vracanja do cak 3 dana u nazad 
+                    
+                </P>
+
+            </div>
+        </div>
+
+    </main>
+    
+
+
+    <footer>
+
+        <div class="futerSlika">
+            <img src="speednet1.png" alt="logo">
+        </div>
+
+        <div class="futerTekst1">
+            <h2 class="naslov">INTERNET OPTICAL - WIRELESS PROVIDER</h2>
+            <div class="kontakt">
+                <div class="wirelessInfo">
+                    WIRELESS: <br>
+                    063/331-028 <br>
+                    Vladimir
+                </div>
+
+                <div class="opticaInfo">
+                    OPTICA: <br>
+                    063/331-098 <br>
+                    Aleksandar
+
+                </div>
+            </div>
+        </div>
+
+        <div class="adresa">
+            <p class="adresaInfo">
+                ul. Dzojina Tihomira Trajkovica br.45, 11277 Ugrinovci <br>
+                speednet.be@gmail.com
+            </p>
+
+        </div>
+    </footer>
+
+      <script>
+        function toggleNav() {
+          var nav = document.getElementById('dropdownNav');
+          if (nav.style.display === 'block') {
+            nav.style.display = 'none'; 
+          } else {
+            nav.style.display = 'block'
+
+          }
+        }
+      </script>
+</body>
+</html>
