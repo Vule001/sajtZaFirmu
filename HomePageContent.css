@@ -1,0 +1,76 @@
+.sadrzaj{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
+.prviDeo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.slika1{
+    display: flex;
+    flex: 1;
+
+}
+.tekst1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+
+
+}
+p{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.drugiDeo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.slika2{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+.tekst2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.treciDeo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.slika3{
+    display: flex;
+    flex: 1;
+
+
+}
+.iptvSlika{
+    width: 700px;
+}
+.tekst3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}

@@ -1,0 +1,20 @@
+.sadrzaj{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+.tekst{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.prviDeo{
+    flex: 1;
+}
+.drugiDeo{
+    flex: 1;
+}
+.treciDeo{
+    flex: 1;
+}

@@ -1,0 +1,112 @@
+/* HEADER ----- STILOVI*/
+/*--------------------------------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(216, 27, 27);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 75px;
+}
+
+.hamburger-btn {
+    font-size: 25px;
+    border: 0;
+    display: inline;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(216, 27, 27);
+    color: white;
+    border-radius: 5px;
+
+    
+}
+.hamburger-btn:hover{
+    background-color: white;
+    color: rgb(216, 27, 27);
+    transition: 0.2s;
+}
+
+nav {
+    display: none;
+    background-color: rgb(216, 27, 27);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.navigacija{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* FOOTER ----- STILOVI*/
+/* -------------------------------------------------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    position: static;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+
+}
+.futerSlika{
+    background-color: white;
+    margin: 0px;
+}
+.futerTekst1{
+    color: white;
+    margin: 0px;
+}
+.naslov{
+    background-color: black;
+    margin: 3px;
+}
+.kontakt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    margin: 3px;
+}
+.adresaInfo{
+    color: white;
+    background-color: black;
+    font-size: medium;
+    font-weight: 200px;
+    margin: 3px;
+    padding-left: 52px;
+    padding-right: 52px;
+}
